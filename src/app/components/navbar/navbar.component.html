@@ -1,0 +1,67 @@
+<!-- <div class="alert alert-info">
+  <div class="container">
+    <div class="row align-items-center d-flex">
+      <div style="flex: 1">
+        <h3 routerLink="/home" class="cursor-pinter">AngularDotMovies</h3>
+      </div>
+      <div style="flex: 3">
+        <form (submit)="filterMovies($event)">
+          <input
+            class="form-control"
+            type="text"
+            name="movieTitle"
+            autofocus
+            placeholder="Dime lo que buscas"
+            [(ngModel)]="movieTitle"
+          />
+        </form>
+        <div class="d-flex">
+          <div style="flex: 1">
+            <input
+              class="form-control me-2"
+              type="text"
+              name="movieTitle"
+              autofocus
+              placeholder="Dime lo que buscas"
+              [(ngModel)]="movieTitle"
+            />
+          </div>
+          <div style="flex: 1">
+            <button class="btn btn-dark" type="button">Search</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <h3 routerLink="/home" class="cursor-pinter">AngularDotMovies</h3>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Tickets</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Food</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Contact</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input
+          class="form-control me-2"
+          type="text"
+          name="movieTitle"
+          autofocus
+          placeholder="Dime lo que buscas"
+          [(ngModel)]="movieTitle"
+        />
+        <button class="btn btn-outline-dark" type="button">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
