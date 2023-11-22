@@ -1,11 +1,15 @@
-<div class="row">
-    <div class="col-md 4"></div>
-    <div class="col-md 4">
-        <img src="https://images.pexels.com/photos/1379636/pexels-photo-1379636.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" class="img img-thumbnail">
-        <hr>
-        <h3>Pelis en Angular</h3>
-        <p>Carlos De La Cruz</p>
-        <p>&copy; {{year}} Todos los derechos reservados para mi jeje </p>
+<main>
+  <div class="position-relative overflow-hidden p-3 text-center bg-light m-4">
+    <div class="col-md-5 p-lg-5 mx-auto my-5">
+      <h1 class="display-4 fw-normal">Carlos De La Cruz Cinema</h1>
+      <p class="lead fw-normal">
+        This is a project for the Angular training in Accenture for learning
+        about the technology and just practice a little bit.
+      </p>
+      <a class="btn btn-outline-secondary" [routerLink]="['/movies']"
+        >Let's start</a
+      >
     </div>
-    <div class="col-md 4"></div>
-</div>
+    <div class="product-device shadow-sm d-none d-md-block"></div>
+  </div>
+</main>
