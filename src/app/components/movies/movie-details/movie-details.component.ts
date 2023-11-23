@@ -28,7 +28,7 @@ export class MovieDetailsComponent implements OnInit {
         });
     });
   }
-  testFunc() {
+  addToCart() {
     this.moviesService.changeList(this.movie);
   }
 }
