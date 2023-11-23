@@ -85,7 +85,10 @@
             width="25px"
           />
         </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        <ul
+          class="dropdown-menu dropdown-menu-lg-end"
+          aria-labelledby="dropdownMenuButton1"
+        >
           <div *ngIf="itemsList.length > 0">
             <div class="d-flex justify-content-center">
               <div class="d-flex flex-column">
@@ -149,17 +152,6 @@
           </div>
         </ul>
       </div>
-      <form class="d-flex">
-        <input
-          class="form-control me-2"
-          type="text"
-          name="movieTitle"
-          autofocus
-          placeholder="Dime lo que buscas"
-          [(ngModel)]="movieTitle"
-        />
-        <button class="btn btn-outline-dark" type="button">Search</button>
-      </form>
     </div>
   </div>
 </nav>
